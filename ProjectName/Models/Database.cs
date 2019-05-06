@@ -1,8 +1,8 @@
 using System;
 using MySql.Data.MySqlClient;
-using ToDoList;
+using WorldMap;
 
-namespace ToDoList.Models
+namespace WorldMap.Models
 {
   public class DB
   {
