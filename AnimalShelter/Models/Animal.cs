@@ -150,7 +150,7 @@ namespace AnimalShelter.Models
       MySqlConnection conn = DB.Connection();
       conn.Open();
       var cmd = conn.CreateCommand() as MySqlCommand;
-      cmd.CommandText = @"SELECT * FROM `Animals` WHERE id = @thisId;";
+      cmd.CommandText = @"SELECT * FROM `animals` WHERE id = @thisId;";
       MySqlParameter thisId = new MySqlParameter();
       thisId.ParameterName = "@thisId";
       thisId.Value = id;
@@ -160,7 +160,7 @@ namespace AnimalShelter.Models
       string name = "";
       string sex = "";
       string breed = "";
-      string type = "":
+      string type = "";
       DateTime dateOfAdmittance = new DateTime();
       while (rdr.Read())
       {
