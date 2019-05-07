@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProjectName.Controllers
+namespace AnimalShelter.Controllers
 {
   public class HomeController : Controller
   {
 
     [Route("/")]
-    public ActionResult Home() { return View(); }
+    public ActionResult Index() { return View(); }
   }
 }

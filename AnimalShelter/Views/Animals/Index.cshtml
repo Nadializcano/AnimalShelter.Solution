@@ -1,0 +1,25 @@
+@using AnimalShelter.Models;
+@{
+  Layout = "_Layout";
+}
+  <ul>
+
+  @if (Model.Count == 0)
+  {
+    <p>You have no animals in your shelter.</p>
+  }
+  @if (Model.Count !=0)
+  {
+    @foreach (Animal animal in Model)
+    {
+    <li><a href='/animals/@animal.GetId()'>@animal.GetName()</a></li>
+    }
+  }
+
+  </ul>
+    <a href="/animals/new">Add a new animal.</a>
+    <form action="/animals/delete" method="post">
+      <button type="submit" name="button">Clear All Animals</button>
+    </form>
+  </body>
+</html>

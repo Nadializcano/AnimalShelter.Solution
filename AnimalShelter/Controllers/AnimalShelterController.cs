@@ -6,7 +6,7 @@ namespace ProjectName.Controllers
   public class ProjectNameController : Controller
   {
 
-    [Route("/")]
-    public ActionResult Home() { return View(); }
+    [Route("/animals")]
+    public ActionResult Index() { return View(); }
   }
 }
