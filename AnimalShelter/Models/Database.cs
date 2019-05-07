@@ -1,8 +1,8 @@
 using System;
 using MySql.Data.MySqlClient;
-using WorldMap;
+using AnimalShelter;
 
-namespace WorldMap.Models
+namespace AnimalShelter.Models
 {
   public class DB
   {
